@@ -1,0 +1,68 @@
+{
+  "model_version": "V2 Baseline (siamese_signature_v2.pth)",
+  "architecture": "3-layer Conv + 2-layer Dense (16.8M params, unnormalized)",
+  "optimal_val_threshold": 1.3679251670837402,
+  "val_metrics": {
+    "roc_auc": 0.7622341712151905,
+    "eer": 0.30114959641620087,
+    "eer_threshold": 1.3679251670837402,
+    "evaluated_threshold": 1.3679251670837402,
+    "accuracy": 0.6988603156049094,
+    "far": 0.3011216566005177,
+    "frr": 0.30117753623188404,
+    "precision": 0.8297055057618438,
+    "recall": 0.6988783433994823,
+    "f1": 0.7586933614330874,
+    "confusion_matrix": {
+      "tn_genuine_correct": 1543,
+      "fp_genuine_rejected_frr": 665,
+      "fn_forgery_accepted_far": 1396,
+      "tp_forgery_detected": 3240
+    },
+    "total_pairs": 6844,
+    "genuine_pairs": 2208,
+    "forged_pairs": 4636
+  },
+  "test_metrics_locked_threshold": {
+    "roc_auc": 0.8639877206458499,
+    "eer": 0.22035371203287246,
+    "eer_threshold": 1.43515944480896,
+    "evaluated_threshold": 1.3679251670837402,
+    "accuracy": 0.7842679127725857,
+    "far": 0.19521072796934866,
+    "frr": 0.25885668276972623,
+    "precision": 0.8672584640792733,
+    "recall": 0.8047892720306513,
+    "f1": 0.8348569157392687,
+    "confusion_matrix": {
+      "tn_genuine_correct": 1841,
+      "fp_genuine_rejected_frr": 643,
+      "fn_forgery_accepted_far": 1019,
+      "tp_forgery_detected": 4201
+    },
+    "total_pairs": 7704,
+    "genuine_pairs": 2484,
+    "forged_pairs": 5220
+  },
+  "test_metrics_at_test_eer": {
+    "roc_auc": 0.8639877206458499,
+    "eer": 0.22035371203287246,
+    "eer_threshold": 1.43515944480896,
+    "evaluated_threshold": 1.43515944480896,
+    "accuracy": 0.7795950155763239,
+    "far": 0.22049808429118775,
+    "frr": 0.22020933977455717,
+    "precision": 0.8814991334488734,
+    "recall": 0.7795019157088122,
+    "f1": 0.8273688491256609,
+    "confusion_matrix": {
+      "tn_genuine_correct": 1937,
+      "fp_genuine_rejected_frr": 547,
+      "fn_forgery_accepted_far": 1151,
+      "tp_forgery_detected": 4069
+    },
+    "total_pairs": 7704,
+    "genuine_pairs": 2484,
+    "forged_pairs": 5220
+  }
+}
