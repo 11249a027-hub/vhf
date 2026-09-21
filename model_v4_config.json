@@ -1,0 +1,28 @@
+{
+  "model_name": "Siamese-V4-WriterIdentity",
+  "architecture": {
+    "model_class": "SiameseDeepV3",
+    "embedding_dimension": 256,
+    "input_height": 155,
+    "input_width": 220
+  },
+  "threshold": {
+    "locked_validation_distance_threshold": 0.423,
+    "similarity_percentage_threshold": 95.53
+  },
+  "training": {
+    "epochs": 5,
+    "train_time_sec": 644.7,
+    "best_epoch": 3,
+    "batch_size": 32,
+    "seed": 42,
+    "loss_semantics": "Balanced 50/50 Skilled Forgery & Cross-Writer Genuine Negatives"
+  },
+  "validation_metrics": {
+    "threshold": 0.42299999999999993,
+    "frr": 0.08876811594202899,
+    "far_forgery": 0.0,
+    "far_cross": 0.1768,
+    "combined_far": 0.0884
+  }
+}
